@@ -1,0 +1,56 @@
+programa
+{
+  funcao inicio()
+  {
+    inteiro n1, n2, n3, n4, n5, n6
+    inteiro soma_inferiores_72 = 0
+
+    // Lê os seis números
+    escreva("Digite o 1º número: ")
+    leia(n1)
+    escreva("Digite o 2º número: ")
+    leia(n2)
+    escreva("Digite o 3º número: ")
+    leia(n3)
+    escreva("Digite o 4º número: ")
+    leia(n4)
+    escreva("Digite o 5º número: ")
+    leia(n5)
+    escreva("Digite o 6º número: ")
+    leia(n6)
+
+    // Exibe todos os números digitados
+    escreva("\n")
+    escreva("Os números que você digitou foram: ", n1, ", ", n2, ", ", n3, ", ", n4, ", ", n5, ", ", n6, "\n")
+    escreva("\n")
+
+    // Verifica e soma os números inferiores a 72
+    se (n1 < 72)
+    {
+      soma_inferiores_72 = soma_inferiores_72 + n1
+    }
+    se (n2 < 72)
+    {
+      soma_inferiores_72 = soma_inferiores_72 + n2
+    }
+    se (n3 < 72)
+    {
+      soma_inferiores_72 = soma_inferiores_72 + n3
+    }
+    se (n4 < 72)
+    {
+      soma_inferiores_72 = soma_inferiores_72 + n4
+    }
+    se (n5 < 72)
+    {
+      soma_inferiores_72 = soma_inferiores_72 + n5
+    }
+    se (n6 < 72)
+    {
+      soma_inferiores_72 = soma_inferiores_72 + n6
+    }
+    
+    // Exibe a soma final
+    escreva("A soma de todos os números inferiores a 72 é: ", soma_inferiores_72, "\n")
+  }
+}
