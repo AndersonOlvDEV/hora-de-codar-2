@@ -1,0 +1,59 @@
+programa
+{
+  funcao inicio()
+  {
+    real n1, n2, n3
+    real maior1, maior2
+    real soma
+
+    // Pede e lê os três números
+    escreva("Digite o primeiro número: ")
+    leia(n1)
+    escreva("Digite o segundo número: ")
+    leia(n2)
+    escreva("Digite o terceiro número: ")
+    leia(n3)
+
+    // Lógica para encontrar os dois maiores
+    se (n1 > n2 e n1 > n3)
+    {
+      maior1 = n1
+      se (n2 > n3)
+      {
+        maior2 = n2
+      }
+      senao
+      {
+        maior2 = n3
+      }
+    }
+    senao se (n2 > n1 e n2 > n3)
+    {
+      maior1 = n2
+      se (n1 > n3)
+      {
+        maior2 = n1
+      }
+      senao
+      {
+        maior2 = n3
+      }
+    }
+    senao
+    {
+      maior1 = n3
+      se (n1 > n2)
+      {
+        maior2 = n1
+      }
+      senao
+      {
+        maior2 = n2
+      }
+    }
+
+    // Calcula a soma e exibe o resultado
+    soma = maior1 + maior2
+    escreva("A soma dos 2 maiores números é: ", soma)
+  }
+}
